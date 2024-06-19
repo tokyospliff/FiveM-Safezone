@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FiveM Safezone Script</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
             color: #333;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa;
         }
         .container {
             width: 80%;
@@ -19,7 +19,7 @@
             padding: 20px;
         }
         h1 {
-            color: #2c3e50;
+            color: #343a40;
             text-align: center;
             margin-top: 20px;
         }
@@ -27,24 +27,27 @@
             background: #fff;
             padding: 20px;
             margin: 20px 0;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         .section-title {
-            color: #e74c3c;
+            color: #dc3545;
             font-size: 1.5em;
             margin-bottom: 10px;
         }
-        .code-block {
-            background: #ecf0f1;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 0.8em;
+            margin-right: 5px;
+            border-radius: 3px;
         }
         footer {
             text-align: center;
             padding: 20px;
-            background: #2c3e50;
+            background: #343a40;
             color: #fff;
             position: fixed;
             width: 100%;
@@ -57,17 +60,17 @@
         <h1>FiveM Safezone Script</h1>
         
         <div class="description">
-            <h2 class="section-title">Description</h2>
-            <p>This FiveM script creates safe zones where players cannot take damage and collisions are enabled between players within the zone. The safe zones can be configured to specific coordinates, providing a more immersive and safer gameplay experience.</p>
+            <h2 class="section-title">What is it?</h2>
+            <p>Create designated safe zones in your FiveM server where players are protected from damage and collisions with other players are enabled. Enhance your server's gameplay with realistic safe areas!</p>
         </div>
         
         <div class="features">
-            <h2 class="section-title">Features</h2>
+            <h2 class="section-title">Key Features</h2>
             <ul>
-                <li>Configurable safe zones with coordinates and radius.</li>
-                <li>Prevents damage within safe zones.</li>
-                <li>Enables collisions between players within safe zones.</li>
-                <li>Utilizes both server-side and client-side scripts for optimal performance.</li>
+                <li><span class="badge">Configurable</span> Define safe zones with specific coordinates and radius.</li>
+                <li><span class="badge">Damage Protection</span> Prevent players from taking damage within safe zones.</li>
+                <li><span class="badge">Collision Enabled</span> Allow collisions between players within the same safe zone.</li>
+                <li><span class="badge">Optimized Performance</span> Utilizes server-side and client-side scripts for optimal functionality.</li>
             </ul>
         </div>
         
@@ -76,22 +79,18 @@
             
             <h3>Download and Setup</h3>
             <p>Clone this repository or download the zip archive:</p>
-            <div class="code-block">
-                <code>git clone https://github.com/user/fivem-safezone-script.git</code>
-            </div>
+            <pre><code>git clone https://github.com/user/fivem-safezone-script.git</code></pre>
             <p>Copy the <code>safezone_script</code> folder into the <code>resources</code> directory of your FiveM server.</p>
             
             <h3>Server Configuration</h3>
             <p>Add the following line to your <code>server.cfg</code> file:</p>
-            <div class="code-block">
-                <code>start safezone_script</code>
-            </div>
+            <pre><code>start safezone_script</code></pre>
         </div>
         
         <div class="contributions">
             <h2 class="section-title">Contributions</h2>
             <p>Contributions are welcome! Please use pull requests to contribute to this project. Make sure to follow the style guidelines and add relevant comments to your code.</p>
-            <p><i class="fab fa-github"></i> <a href="https://github.com/user/fivem-safezone-script" target="_blank">GitHub Repository</a></p>
+            <p><a href="https://github.com/user/fivem-safezone-script" class="badge" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a></p>
         </div>
         
         <div class="license">
